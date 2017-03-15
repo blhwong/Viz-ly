@@ -31,3 +31,5 @@ bower_components/
 
 # Config directories
 config/vision.js
+
+photos/
