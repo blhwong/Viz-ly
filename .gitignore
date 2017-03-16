@@ -32,3 +32,5 @@ photos/
 src/client/config/vision.js
 
 src/client/public/bundle.js
+
+src/server/config
