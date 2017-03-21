@@ -15,6 +15,7 @@ class App extends React.Component {
           <input type="file" name="sampleFile" multiple/>
           <input type='submit' value='Upload!' />
         </form>
+        <h5>Please upload photos under 4MB!</h5>
       </div>
     );
   }
