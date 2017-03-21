@@ -12,7 +12,7 @@ class App extends React.Component {
           action='http://localhost:3000/upload'
           method='post'
           encType="multipart/form-data">
-          <input type="file" name="sampleFile" />
+          <input type="file" name="sampleFile" multiple/>
           <input type='submit' value='Upload!' />
         </form>
       </div>
