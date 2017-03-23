@@ -148,8 +148,7 @@ app.post('/upload', function(req, res) {
 
   var resultCount = 0;
   var vision = gcloud.vision({
-    projectId: 'vizly-161619',
-    keyFilename: __dirname + '/config/Vizly-143f14765612.json',
+    projectId: 'vizly-161619'
   });
 
   var arrayStrings = [];
