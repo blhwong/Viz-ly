@@ -99,7 +99,7 @@ app.get('/auth/facebook/callback',
   passport.authenticate('facebook', { successRedirect: '/', failureRedirect: '/' }));
 
 app.get('/userLoggedIn', function(req, res) {
-  console.log('---------------------------', req.user);
+  // console.log('---------------------------', req.user);
   // db.addFakeUser(req);
   res.send(req.user);
 });
