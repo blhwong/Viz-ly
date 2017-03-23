@@ -156,8 +156,7 @@ app.post('/upload', function(req, res) {
     credentials: {
       client_email: process.env.VISION_CLIENT_EMAIL,
       private_key: process.env.VISION_PRIVATE_KEY
-    },
-    key: process.env.VISION_API_KEY
+    }
   });
 
   var arrayStrings = [];
