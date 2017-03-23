@@ -30,7 +30,7 @@ var gcloud = require('google-cloud')( {
   projectId: process.env.VISION_PROJECT_ID,
   credentials: {
     client_email: process.env.VISION_CLIENT_EMAIL,
-    private_key: process.env.VISION_PRIVATE_KEY
+    private_key: process.env.VISION_PRIVATE_KEY.replace(/\\n/g, '\n')
   },
   key: process.env.VISION_API_KEY
 });
@@ -155,7 +155,7 @@ app.post('/upload', function(req, res) {
     projectId: process.env.VISION_PROJECT_ID,
     credentials: {
       client_email: process.env.VISION_CLIENT_EMAIL,
-      private_key: process.env.VISION_PRIVATE_KEY
+      private_key: process.env.VISION_PRIVATE_KEY.replace(/\\n/g, '\n')
     }
   });
 
