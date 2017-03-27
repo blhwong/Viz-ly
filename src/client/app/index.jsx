@@ -83,7 +83,7 @@ class App extends React.Component {
           <h2 className="welcome"> Welcome, {this.state.user}</h2>
           <form action='/logout' method='get'>
             <input type='submit' value='Logout' />
-          </form>      
+          </form>
           <p className="info">To see Viz-ly at work, upload your pictures.
             The more photos you upload, the more dynamic the visualization!
           </p>
@@ -91,10 +91,12 @@ class App extends React.Component {
           {this.state.error && <h6 className="error">Sorry you encountered an error. Please try again later!</h6>}
           {this.state.duplicates && <h6 className="error">It seems you have submitted at least one of the same photos already. We went ahead and excluded it from our chart!</h6>}
           {this.state.uploading ? <img src="../spiffygif_46x46.gif"></img> :
+
                 <div>
                   {this.state.wordList.length > 0 && <Charts list={this.state.wordList}/>}
                 </div>
                 }
+                <img style={{width: "auto"}} src="../scroll-down-gif.gif"></img>
         </div>
       );
     } else {
