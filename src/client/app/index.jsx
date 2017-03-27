@@ -96,7 +96,7 @@ class App extends React.Component {
                   {this.state.wordList.length > 0 && <Charts list={this.state.wordList}/>}
                 </div>
                 }
-                <img style={{width: "auto"}} src="../scroll-down-gif.gif"></img>
+        {this.state.wordList.length > 0 && <img className="scroll" src="../scroll-down-gif.gif"></img>}
         </div>
       );
     } else {
